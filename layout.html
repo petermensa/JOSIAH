@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout Website</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            header {
+                background-color: lightslategray;
+                text-align: center;
+                padding: 50px;
+                color: white; 
+                font-size: 35px;
+            }
+            nav {
+                float: left;
+                width: 40%;
+                background-color:lightyellow;
+            }
+            article{
+                background-color:lime;
+                float: right;
+                width: 60%;
+            }
+            section::after{
+                content: "";
+                display:inline-table table;
+                clear: both;
+            }
+            footer{
+                background-color: mediumblue;
+                text-align: center;
+                font-size: 35px;
+                color: white; 
+                padding: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Cities</h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Sefwi-Bekwai" target="_blank">Sefwi Bekwai</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Sefwi-Wiawso_Municipal_District" target="_blank">Sefwi Waiwso</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Sefwi_Debiso" target="_blank">Sefwi Debiso</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Sefwi_Juaboso" target="_blank">Sefwi Juaboso</a></li>
+
+                </ul>
+            </nav>
+            <article>
+                <h2>Sefwi Bekwai</h2>
+                <p>Sefwi Bekwai is a small town in Bibiani Anhwiaso Bekwai District in the Western Region of Ghana</p>
+            </article>
+        </section>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </body>
+</html>
